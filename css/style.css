@@ -499,7 +499,6 @@ body {
   -webkit-column-gap: 1.4375rem;
      -moz-column-gap: 1.4375rem;
           column-gap: 1.4375rem;
-  padding: 1.25rem;
   border-top: 1px solid #000;
 }
 
@@ -529,9 +528,11 @@ body {
   background: url(/img/pack/bg.png) no-repeat; }
 
 .item__card {
+  background-size: cover;
+  background-position: center;
   padding: 8.0625rem 1.375rem 1.25rem;
-  width: 436px;
-  height: 658px;
+  max-width: 436px;
+  max-height: 658px;
 }
 
 .item__category {
@@ -552,6 +553,10 @@ body {
 
 .item__image {
   border-radius: 14.4px;
+}
+
+.item__image img {
+  max-width: 100%;
 }
 
 .story__container {
@@ -637,7 +642,7 @@ body {
 }
 
 .ujjo__image {
-  margin-top: -180px;
+  margin-top: -80px;
 }
 
 .ujjo__image img {
@@ -704,6 +709,28 @@ body {
 
   .ujjo__image {
     margin-top: -120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-hero__tittle {
+    font-size: 2rem;
+  }
+
+  .pack__tittle {
+    font-size: 2rem;
+  }
+
+  .left__tittle {
+    font-size: 2rem;
+  }
+
+  .rigth__text {
+    font-size: 0.875rem;
+  }
+
+  .ujjo__image {
+    margin-top: 0px;
   }
 }
 
